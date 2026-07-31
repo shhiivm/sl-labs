@@ -55,7 +55,7 @@ function Home() {
       </a>
 
       <a
-        href="https://wa.me/919999999999"
+        href="https://wa.me/917052292034"
         target="_blank"
         rel="noreferrer"
         className="fixed bottom-24 right-6 z-40 flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-white shadow-[0_10px_30px_rgba(37,211,102,0.25)]"
