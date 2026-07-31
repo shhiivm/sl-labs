@@ -2,7 +2,6 @@ import { motion, useScroll, useSpring } from "framer-motion";
 import { ArrowUp, MessageCircle } from "lucide-react";
 import { useEffect, useState } from "react";
 // import Navbar from "../components/layout/Navbar";
-// import Footer from "../components/layout/Footer";
 import Hero from "../components/sections/Hero";
 import Products from "../components/sections/Products";
 import WhyChoose from "../components/sections/WhyChoose";
@@ -55,7 +54,7 @@ function Home() {
       </a>
 
       <a
-        href="https://wa.me/917052292034"
+        href="https://wa.me/919264969838"
         target="_blank"
         rel="noreferrer"
         className="fixed bottom-24 right-6 z-40 flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-white shadow-[0_10px_30px_rgba(37,211,102,0.25)]"
