@@ -98,10 +98,10 @@ function Footer() {
                 <Mail className="h-4 w-4" /> hello@sllabs.in
               </div>
               <div className="flex items-center gap-3">
-                <Phone className="h-4 w-4" /> +91 99999 99999
+                <Phone className="h-4 w-4" /> +91 9264969838
               </div>
               <div className="flex items-start gap-3">
-                <MapPin className="h-4 w-4" /> Uttar Pradesh, India
+                <MapPin className="h-4 w-4" /> Varanasi, Uttar Pradesh, India
               </div>
             </div>
           </div>
