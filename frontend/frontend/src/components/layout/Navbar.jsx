@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link, NavLink } from "react-router-dom";
 import { navLinks } from "../../utils/content";
-import logo from "../../assets/images/logo/logo.jpg";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,11 +20,15 @@ function Navbar() {
     >
       <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
         <Link to="/" className="flex items-center gap-3">
-          <img
-            src={logo}
-            alt="SL Labs herbal wellness and personal care"
-            className="h-14 w-[190px] object-cover object-center mix-blend-multiply"
-          />
+          <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#1F3A2D] text-sm font-semibold text-white">
+            SL
+          </div>
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[#1F3A2D]">
+              Labs
+            </p>
+            <p className="text-xs text-[#666666]">Nature • Science</p>
+          </div>
         </Link>
 
         <ul className="hidden items-center gap-7 lg:flex">
@@ -43,14 +46,14 @@ function Navbar() {
           ))}
         </ul>
 
-        {/* <div className="hidden items-center gap-4 lg:flex">
+        <div className="hidden items-center gap-4 lg:flex">
           <a
             href="#products"
             className="rounded-full border border-[#1F3A2D] px-5 py-3 text-sm font-semibold text-[#1F3A2D] transition hover:bg-[#1F3A2D] hover:text-white"
           >
             Shop Now
           </a>
-        </div> */}
+        </div>
 
         <button
           className="rounded-full p-2 lg:hidden"

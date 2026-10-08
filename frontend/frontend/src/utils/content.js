@@ -2,53 +2,38 @@ export const navLinks = [
   { name: "Home", href: "/" },
   { name: "Products", href: "/products" },
   { name: "About", href: "/about" },
-  { name: "Blogs", href: "/blogs" },
+  { name: "Ingredients", href: "/#ingredients" },
+  { name: "Science", href: "/#science" },
+  { name: "Reviews", href: "/#reviews" },
+  { name: "FAQ", href: "/#faq" },
   { name: "Contact", href: "/contact" },
 ];
 
 export const products = [
   {
-    slug: "hairglow-hair-oil",
     name: "HairGlow Hair Oil",
-    mrp: 249,
-    price: 199,
-    image:"https://res.cloudinary.com/dgzmz1cls/image/upload/v1791167074/Botanical_HairGlow_Oil_Product_Display_pbvlfh.png",
+    image:
+      "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=900&q=80",
     description:
       "A lightweight botanical oil that restores softness, shine, and scalp comfort.",
     benefits: ["Deep nourishment", "Frizz control", "Scalp comfort"],
   },
   {
-    slug: "hairglow-hair-spray",
     name: "HairGlow Hair Spray",
-    mrp: 199,
-    price: 179,
     image:
-      "https://res.cloudinary.com/dgzmz1cls/image/upload/v1791166699/Botanical_HairGlow_Spray_Still_Life_gfga3o.png",
+      "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=80",
     description:
       "A satin-finish mist designed to protect hair while adding luminous polish.",
     benefits: ["Heat protection", "Soft hold", "Velvety finish"],
   },
   {
-    slug: "sl-labs-rose-water",
-    name: "Sl Labs Rose Water",
-    mrp: 119,
-    price: 99,
+    name: "Coming Soon",
     image:
-      "https://res.cloudinary.com/dgzmz1cls/image/upload/v1791166523/image-gen-1_2_mkp08y.png",
+      "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=900&q=80",
     description:
-      "A lightweight serum that hydrates, refreshes, and adds a luminous finish to hair and skin.",
-    benefits: ["Hydration", "Refreshment", "Luminous finish"],
-
-
+      "A new ritual collection is on the way with elevated botanical care essentials.",
+    benefits: ["New launches", "Limited batch", "Luxury formulations"],
   },
-  // {
-  //   name: "Coming Soon",
-  //   image:
-  //     "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=900&q=80",
-  //   description:
-  //     "A new ritual collection is on the way with elevated botanical care essentials.",
-  //   benefits: ["New launches", "Limited batch", "Luxury formulations"],
-  // },
 ];
 
 export const whyChoose = [

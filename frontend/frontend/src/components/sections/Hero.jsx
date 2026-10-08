@@ -8,9 +8,9 @@ function Hero() {
   return (
     <section
       id="top"
-      // className="relative overflow-hidden bg-[#F8F8F5] pt-24 sm:pt-28"
+      className="relative overflow-hidden bg-[#F8F8F5] pt-24 sm:pt-28"
     >
-      {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(184,135,70,0.12),transparent_36%),linear-gradient(120deg,#F8F8F5_0%,#FCFBF8_55%,#EEF5EF_100%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(184,135,70,0.12),transparent_36%),linear-gradient(120deg,#F8F8F5_0%,#FCFBF8_55%,#EEF5EF_100%)]" />
 
       <img
         src={leaf}
@@ -21,9 +21,9 @@ function Hero() {
         src={hibiscus}
         alt=""
         className="absolute right-6 top-24 w-28 opacity-20 sm:right-10 sm:w-36"
-      /> */}
+      />
 
-      <div className="relative mx-auto max-w-7xl px-6 py-10 sm:py-14 lg:px-8 lg:py-22">
+      <div className="relative mx-auto max-w-7xl px-6 py-20 sm:py-24 lg:px-8 lg:py-32">
         <div className="grid items-center gap-14 lg:grid-cols-[1.05fr_0.95fr]">
           <motion.div
             initial={{ opacity: 0, y: 24 }}

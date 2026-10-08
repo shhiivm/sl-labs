@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
-import { Link } from "react-router-dom";
 import { products } from "../../utils/content";
 
 function Products() {
@@ -50,12 +49,6 @@ function Products() {
                 <h3 className="text-2xl font-semibold text-[#222222]">
                   {product.name}
                 </h3>
-                <div className="mt-2 flex items-baseline gap-3">
-                  <p className="text-lg font-semibold text-[#1F3A2D]">₹{product.price}</p>
-                  <p className="text-sm text-[#777D75]">
-                    MRP <del>₹{product.mrp}</del>
-                  </p>
-                </div>
                 <p className="mt-3 text-sm leading-7 text-[#666666]">
                   {product.description}
                 </p>
@@ -69,9 +62,9 @@ function Products() {
                   ))}
                 </ul>
 
-                <Link to={`/products/${product.slug}`} className="mt-8 inline-flex items-center gap-2 rounded-full border border-[#1F3A2D] px-5 py-3 text-sm font-semibold text-[#1F3A2D] transition hover:bg-[#1F3A2D] hover:text-white">
+                <button className="mt-8 inline-flex items-center gap-2 rounded-full border border-[#1F3A2D] px-5 py-3 text-sm font-semibold text-[#1F3A2D] transition hover:bg-[#1F3A2D] hover:text-white">
                   Learn More <ArrowRight className="h-4 w-4" />
-                </Link>
+                </button>
               </div>
             </motion.article>
           ))}

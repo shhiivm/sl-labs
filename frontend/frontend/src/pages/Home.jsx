@@ -7,7 +7,7 @@ import Products from "../components/sections/Products";
 import WhyChoose from "../components/sections/WhyChoose";
 import Ingredients from "../components/sections/Ingredients";
 import Process from "../components/sections/Process";
-// import Science from "../components/sections/Science";
+import Science from "../components/sections/Science";
 import Testimonials from "../components/sections/Testimonials";
 import FAQ from "../components/sections/FAQ";
 import Instagram from "../components/sections/Instagram";
@@ -31,18 +31,20 @@ function Home() {
         className="fixed left-0 top-0 z-60 h-1 w-full origin-left bg-[#B88746]"
         style={{ scaleX }}
       />
+      {/* <Navbar /> */}
       <main>
         <Hero />
         <Products />
         <WhyChoose />
-        {/* <Ingredients />
-        <Process /> */}
-        {/* <Science /> */}
-        {/* <Testimonials />
-        <FAQ /> */}
-        {/* <Instagram /> */}
+        <Ingredients />
+        <Process />
+        <Science />
+        <Testimonials />
+        <FAQ />
+        <Instagram />
         <Newsletter />
       </main>
+      {/* <Footer /> */}
 
       <a
         href="#top"
