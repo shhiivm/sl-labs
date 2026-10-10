@@ -1,6 +1,6 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import logo from "../../assets/images/logo/logo.jpg";
+import logo from "../../assets/images/logo/logo.png";
 
 function Footer() {
   return (
