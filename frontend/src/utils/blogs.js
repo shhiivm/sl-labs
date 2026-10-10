@@ -9,7 +9,7 @@ export const blogPosts = [
     readTime: "5 min read",
     author: "The SL Labs Journal",
     image:
-      "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=1200&q=85",
+      "https://res.cloudinary.com/dgzmz1cls/image/upload/v1791651551/HairGlow_Botanical_Spray_Editorial_Portrait_dnxooc.png",
     imageAlt: "A person applying hair spray to their hair in a well-lit room",
     body: [
       {

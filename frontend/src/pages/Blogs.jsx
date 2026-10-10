@@ -50,7 +50,7 @@ export const Blogs = () => {
 
           <div className="relative min-h-[300px] overflow-hidden sm:min-h-[410px] lg:min-h-[480px]">
             <img
-              src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=1600&q=90"
+              src="https://res.cloudinary.com/dgzmz1cls/image/upload/v1791651551/HairGlow_Botanical_Spray_Editorial_Portrait_dnxooc.png"
               alt="Botanical hair-care essentials arranged among fresh leaves"
               className="absolute inset-0 h-full w-full object-cover"
             />

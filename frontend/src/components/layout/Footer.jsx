@@ -101,10 +101,10 @@ function Footer() {
             <h3 className="mb-5 text-lg font-semibold">Contact</h3>
             <div className="space-y-4 text-white/70">
               <div className="flex items-center gap-3">
-                <Mail className="h-4 w-4" /> hello@sllabs.in
+                <Mail className="h-4 w-4" /> support@sllabscare.in
               </div>
               <div className="flex items-center gap-3">
-                <Phone className="h-4 w-4" /> +91 9264969838
+                <Phone className="h-4 w-4" /> +91 9621652557
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="h-4 w-4" /> Varanasi, Uttar Pradesh, India

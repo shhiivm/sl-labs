@@ -52,7 +52,7 @@ function Home() {
       </a>
 
       <a
-        href="https://wa.me/919264969838"
+        href="https://wa.me/919621652557?text=Hi%20SL%20Labs,%20I'm%20interested%20in%20your%20products."
         target="_blank"
         rel="noreferrer"
         className="fixed bottom-24 right-6 z-40 flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-white shadow-[0_10px_30px_rgba(37,211,102,0.25)]"

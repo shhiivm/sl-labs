@@ -20,11 +20,11 @@ function Contact() {
             <div className="mt-10 space-y-5 text-[#222222]">
               <div className="flex items-center gap-4 rounded-[1.25rem] bg-white px-5 py-4 shadow-sm">
                 <Mail className="h-5 w-5 text-[#1F3A2D]" />
-                <span>hello@sllabs.in</span>
+                <span>support@sllabscare.in</span>
               </div>
               <div className="flex items-center gap-4 rounded-[1.25rem] bg-white px-5 py-4 shadow-sm">
                 <Phone className="h-5 w-5 text-[#1F3A2D]" />
-                <span>+91 99999 99999</span>
+                <span>+91 9621652557</span>
               </div>
               <div className="flex items-center gap-4 rounded-[1.25rem] bg-white px-5 py-4 shadow-sm">
                 <MapPin className="h-5 w-5 text-[#1F3A2D]" />

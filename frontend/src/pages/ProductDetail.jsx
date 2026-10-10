@@ -2,7 +2,7 @@ import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 import { Link, useParams } from "react-router-dom";
 import { products } from "../utils/content";
 
-const whatsappNumber = "919264969838";
+const whatsappNumber = "919621652557"; // Replace with your WhatsApp number
 
 function ProductDetail() {
   const { slug } = useParams();
