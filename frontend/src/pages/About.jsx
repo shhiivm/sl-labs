@@ -22,10 +22,10 @@ function About() {
       <JourneyTimeline />
       <HairGlowStory />
       <OurApproach />
-      <IngredientsShowcase />
+      {/* <IngredientsShowcase /> */}
       <OurValues />
-      <Testimonials />
-      <FounderSection />
+      {/* <Testimonials /> */}
+      {/* <FounderSection /> */}
       <FutureVision />
       <AboutCTA />
     </main>

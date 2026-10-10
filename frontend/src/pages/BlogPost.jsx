@@ -43,6 +43,62 @@ function BlogPost() {
     }
   };
 
+  const renderBodyBlock = (block, index) => {
+    if (typeof block === "string") {
+      return <p key={`${block}-${index}`}>{block}</p>;
+    }
+
+    if (!block || typeof block !== "object") return null;
+
+    switch (block.type) {
+      case "heading":
+        return (
+          <h2 key={`${block.type}-${index}`} className="mt-8 font-serif text-2xl text-[#1F3A2D]">
+            {block.text}
+          </h2>
+        );
+      case "subheading":
+        return (
+          <h3 key={`${block.type}-${index}`} className="mt-8 font-serif text-xl text-[#1F3A2D]">
+            {block.text}
+          </h3>
+        );
+      case "paragraph":
+        return (
+          <p key={`${block.type}-${index}`} className="text-base leading-8 text-[#555E56]">
+            {block.text}
+          </p>
+        );
+      case "list":
+        return (
+          <ul key={`${block.type}-${index}`} className="list-disc space-y-2 pl-6 text-base leading-8 text-[#555E56]">
+            {block.items?.map((item, itemIndex) => (
+              <li key={`${item}-${itemIndex}`}>{item}</li>
+            ))}
+          </ul>
+        );
+      case "cta":
+        return (
+          <div key={`${block.type}-${index}`} className="mt-8 rounded-2xl border border-[#D9D5C7] bg-[#F3EDE3] p-5 text-[#1F3A2D]">
+            <p className="text-base leading-7">{block.text}</p>
+            {block.label ? (
+              <button type="button" className="mt-4 text-sm font-semibold uppercase tracking-[0.12em] text-[#9A7040]">
+                {block.label}
+              </button>
+            ) : null}
+          </div>
+        );
+      case "disclaimer":
+        return (
+          <p key={`${block.type}-${index}`} className="mt-8 border-t border-[#DADDD5] pt-5 text-sm italic leading-7 text-[#666D66]">
+            {block.text}
+          </p>
+        );
+      default:
+        return null;
+    }
+  };
+
   if (!article) {
     return (
       <main className="min-h-[70vh] bg-[#F8F8F5] px-6 pt-36 text-center">
@@ -94,7 +150,7 @@ function BlogPost() {
         <div className="mx-auto max-w-2xl py-10 sm:py-14">
           <p className="font-serif text-2xl leading-9 text-[#465348]">{article.excerpt}</p>
           <div className="mt-7 space-y-6 text-base leading-8 text-[#555E56]">
-            {article.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+            {article.body.map((block, index) => renderBodyBlock(block, index))}
           </div>
 
           <div className="mt-10 border-y border-[#DADDD5] py-5">

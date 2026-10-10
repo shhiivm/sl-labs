@@ -1,20 +1,145 @@
 export const blogPosts = [
   {
-    slug: "slower-hair-oiling-ritual",
-    category: "Hair rituals",
-    title: "The case for a slower hair-oiling ritual",
+    slug: "how-to-use-hairglow-hair-spray",
+    category: "Hair rituals || Hair Care Guide",
+    title: "How to Use HairGlow Hair Spray in Your Hair-Care Routine",
     excerpt:
-      "A few considered minutes can turn a familiar step into a more restorative part of your week.",
+      "Learn how to incorporate HairGlow Hair Spray by SL Labs into your hair-care routine, with practical application tips and advice for everyday hair care.",
     date: "September 18, 2026",
     readTime: "5 min read",
     author: "The SL Labs Journal",
     image:
       "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=1200&q=85",
-    imageAlt: "Botanical skincare bottles arranged in warm light",
+    imageAlt: "A person applying hair spray to their hair in a well-lit room",
     body: [
-      "A hair-oiling ritual does not need to be complicated to feel meaningful. Start with a small amount, warm it between your palms, and work it gently through the lengths before giving your scalp a few unhurried minutes of attention.",
-      "The point is not to do more. It is to make space for a consistent moment of care, then wash and style as you normally would. Find a rhythm that feels comfortable for your hair and your week.",
-    ],
+      {
+      type: "paragraph",
+      text: "A good hair-care routine doesn't have to be complicated. With a few simple habits and products suited to your needs, everyday hair care can become easier and more enjoyable."
+    },
+    {
+      type: "paragraph",
+      text: "HairGlow Hair Spray by SL Labs is part of our journey to make botanical-inspired hair care accessible for everyday use. In this guide, we'll explore how to incorporate a hair-care spray into your routine and share practical tips for applying hair products properly."
+    },
+    {
+      type: "heading",
+      text: "What Is HairGlow Hair Spray?"
+    },
+    {
+      type: "paragraph",
+      text: "HairGlow Hair Spray is a hair-care product from SL Labs designed to fit into your regular grooming routine. Before using it, read the product label to understand its ingredients, recommended application method, and precautions."
+    },
+    {
+      type: "heading",
+      text: "How to Use HairGlow Hair Spray"
+    },
+    {
+      type: "paragraph",
+      text: "Step 1: Start with clean, detangled hair. You can incorporate the product after washing your hair or at another time recommended on the label."
+    },
+    {
+      type: "paragraph",
+      text: "Step 2: Shake the bottle gently if the product instructions recommend it. This helps prepare the formulation as directed."
+    },
+    {
+      type: "paragraph",
+      text: "Step 3: Apply evenly. Hold the bottle at the distance specified on the label and apply the recommended amount to the intended areas. Avoid contact with your eyes, nose, and mouth."
+    },
+    {
+      type: "paragraph",
+      text: "Step 4: Distribute gently. If permitted by the instructions, use your fingers or a suitable comb to distribute the product through your hair without pulling or brushing aggressively."
+    },
+    {
+      type: "paragraph",
+      text: "Step 5: Style as usual. Follow the label instructions on whether the product should remain in your hair or be rinsed out."
+    },
+    {
+      type: "heading",
+      text: "When Should You Use HairGlow Hair Spray?"
+    },
+    {
+      type: "paragraph",
+      text: "The ideal time and frequency depend on the formulation and its intended use. Follow the directions on your HairGlow packaging rather than applying extra product throughout the day."
+    },
+    {
+      type: "heading",
+      text: "Can You Use Hair Spray and Hair Oil Together?"
+    },
+    {
+      type: "paragraph",
+      text: "Hair sprays and hair oils can serve different purposes. If you want to use both, check their product instructions and introduce products one at a time so you can understand how your hair responds. Using too much product may leave your hair feeling heavy or coated."
+    },
+    {
+      type: "heading",
+      text: "Tips for a Better Hair-Care Routine"
+    },
+    {
+      type: "list",
+      items: [
+        "Choose a shampoo suited to your scalp and hair needs.",
+        "Handle your hair gently and avoid excessive pulling.",
+        "Limit frequent high-heat styling.",
+        "Follow the recommended quantity and frequency for every product.",
+        "Stop using a product if it causes irritation or discomfort."
+      ]
+    },
+    {
+      type: "heading",
+      text: "Frequently Asked Questions"
+    },
+    {
+      type: "subheading",
+      text: "How often should I use HairGlow Hair Spray?"
+    },
+    {
+      type: "paragraph",
+      text: "Follow the frequency recommended on the product label. Appropriate use depends on the formulation and its intended purpose."
+    },
+    {
+      type: "subheading",
+      text: "Should I wash my hair after applying HairGlow?"
+    },
+    {
+      type: "paragraph",
+      text: "Check the instructions on your bottle. Whether a product should be rinsed out depends on its formulation."
+    },
+    {
+      type: "subheading",
+      text: "Can HairGlow replace shampoo or conditioner?"
+    },
+    {
+      type: "paragraph",
+      text: "A hair spray should not automatically be treated as a replacement for cleansing or conditioning products. Use each product according to its intended purpose."
+    },
+    {
+      type: "subheading",
+      text: "What should I do if I experience irritation?"
+    },
+    {
+      type: "paragraph",
+      text: "Stop using the product if irritation occurs. Seek medical advice if symptoms persist or are severe."
+    },
+    {
+      type: "heading",
+      text: "Make Hair Care Part of Your Everyday Routine"
+    },
+    {
+      type: "paragraph",
+      text: "Hair care doesn't need to involve a long list of products. Understanding your hair, choosing suitable products, and following their directions can help you build a routine that works for you."
+    },
+    {
+      type: "paragraph",
+      text: "At SL Labs, we're building our personal-care range one product at a time, with an emphasis on thoughtful product development and learning from customer feedback."
+    },
+    {
+      type: "cta",
+      text: "Discover HairGlow Hair Spray by SL Labs and explore our approach to everyday hair care.",
+      label: "Explore HairGlow"
+    },
+    {
+      type: "disclaimer",
+      text: "This article provides general hair-care information and is not medical advice. Product use and suitability depend on the formulation and individual circumstances. Always follow the directions and precautions on the product packaging."
+    }
+  ],
   },
   {
     slug: "rosemary-beyond-the-garden",

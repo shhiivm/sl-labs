@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link, NavLink } from "react-router-dom";
 import { navLinks } from "../../utils/content";
-import logo from "../../assets/images/logo/logo.jpg";
+import logo from "../../assets/images/logo/logo.png";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,7 +24,7 @@ function Navbar() {
           <img
             src={logo}
             alt="SL Labs herbal wellness and personal care"
-            className="h-14 w-[190px] object-cover object-center mix-blend-multiply"
+            className="h-10 w-[150px] object-contain object-center mix-blend-multiply sm:h-12 sm:w-[170px]"
           />
         </Link>
 

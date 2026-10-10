@@ -19,19 +19,25 @@ function Footer() {
             </p>
             <div className="mt-8 flex gap-4 text-xl">
               <a
-                href="#"
+                href="https://www.instagram.com/sllabscare"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-full bg-white/10 p-3 transition hover:bg-[#B88746]"
               >
                 <FaInstagram />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/sllabscare"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-full bg-white/10 p-3 transition hover:bg-[#B88746]"
               >
                 <FaFacebook />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/company/sllabscare"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-full bg-white/10 p-3 transition hover:bg-[#B88746]"
               >
                 <FaLinkedin />
@@ -79,12 +85,12 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="transition hover:text-white">
+                <a href="https://www.instagram.com/sllabscare" target="_blank" rel="noopener noreferrer" className="transition hover:text-white">
                   Instagram
                 </a>
               </li>
               <li>
-                <a href="#" className="transition hover:text-white">
+                <a href="https://www.facebook.com/sllabscare" target="_blank" rel="noopener noreferrer" className="transition hover:text-white">
                   Facebook
                 </a>
               </li>
