@@ -1,95 +1,41 @@
-import { motion } from "framer-motion";
-import {
-  Leaf,
-  Shield,
-  Sparkles,
-  Package,
-  Microscope,
-  MapPinned,
-} from "lucide-react";
-
-const cards = [
-  {
-    icon: Leaf,
-    title: "Botanical Ingredients",
-    description:
-      "Carefully selected herbs and plants chosen for texture, nourishment, and elegance.",
-  },
-  {
-    icon: Shield,
-    title: "No Harmful Chemicals",
-    description:
-      "Formulated to feel thoughtful, gentle, and deliberate for everyday use.",
-  },
-  {
-    icon: Sparkles,
-    title: "Small Batch Quality",
-    description:
-      "Every formula is made in limited runs to preserve integrity and refinement.",
-  },
-  {
-    icon: Package,
-    title: "Premium Packaging",
-    description:
-      "Minimal, sculptural packaging that feels as luxurious as the experience inside.",
-  },
-  {
-    icon: Microscope,
-    title: "Scientifically Designed",
-    description:
-      "Modern formulation principles balance performance, comfort, and trust.",
-  },
-  {
-    icon: MapPinned,
-    title: "Made in India",
-    description:
-      "Proudly rooted in Indian botanical heritage and contemporary beauty standards.",
-  },
-];
+import { motion, useReducedMotion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function WhyChoose() {
-  return (
-    <section className="bg-[#F3EEE6] py-24 sm:py-28">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[#B88746]">
-            Why SL Labs
-          </p>
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#1F3A2D] sm:text-4xl">
-            A more refined way to care for your hair.
-          </h2>
-          <p className="mt-5 text-base leading-8 text-[#666666]">
-            We build personal care around luxury, performance, and a deep
-            respect for botanical traditions.
-          </p>
-        </div>
+  const prefersReducedMotion = useReducedMotion();
 
-        <div className="mt-16 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-          {cards.map((card, index) => {
-            const Icon = card.icon;
-            return (
-              <motion.div
-                key={card.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.45, delay: index * 0.07 }}
-                whileHover={{ y: -6, scale: 1.01 }}
-                className="rounded-[1.75rem] border border-[#E4DBCE] bg-white/80 p-8 shadow-[0_16px_50px_rgba(31,58,45,0.06)]"
-              >
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#EAF4EC] text-[#1F3A2D]">
-                  <Icon className="h-6 w-6" />
-                </div>
-                <h3 className="mt-6 text-xl font-semibold text-[#222222]">
-                  {card.title}
-                </h3>
-                <p className="mt-3 text-sm leading-7 text-[#666666]">
-                  {card.description}
-                </p>
-              </motion.div>
-            );
-          })}
-        </div>
+  return (
+    <section id="approach" className="bg-[#F3EEE6] py-14 sm:py-18 lg:py-20">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <motion.div
+          initial={prefersReducedMotion ? false : { opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: prefersReducedMotion ? 0 : 0.45 }}
+          className="grid items-center gap-8 lg:grid-cols-[1fr_auto] lg:gap-14"
+        >
+          <div className="max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#8C672F] sm:text-sm sm:tracking-[0.3em]">
+              Our botanical approach
+            </p>
+            <h2 className="mt-3 text-2xl font-semibold leading-tight text-[#1F3A2D] sm:mt-4 sm:text-4xl">
+              Personal care, considered from ingredient to routine.
+            </h2>
+            <p className="mt-4 max-w-2xl text-sm leading-7 text-[#555E56] sm:mt-5 sm:text-base sm:leading-8">
+              SL Labs brings botanical inspiration together with modern
+              formulation techniques. HairGlow is our hair-care range, created
+              to fit into everyday rituals. Explore our story and approach to
+              learn more about the people and ideas behind the products.
+            </p>
+          </div>
+          <Link
+            to="/about"
+            className="inline-flex min-h-12 w-fit items-center justify-center gap-2 rounded-full border border-[#1F3A2D] px-5 py-3 text-sm font-semibold text-[#1F3A2D] transition hover:bg-[#1F3A2D] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1F3A2D]"
+          >
+            About SL Labs <ArrowRight className="h-4 w-4" />
+          </Link>
+        </motion.div>
       </div>
     </section>
   );

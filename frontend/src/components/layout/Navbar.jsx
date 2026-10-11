@@ -34,7 +34,7 @@ function Navbar() {
               <NavLink
                 to={link.href}
                 className={({ isActive }) =>
-                  `text-sm font-medium transition ${isActive ? "text-[#1F3A2D]" : "text-[#444444] hover:text-[#1F3A2D]"}`
+                  `rounded-sm text-sm font-medium transition focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1F3A2D] ${isActive ? "text-[#1F3A2D]" : "text-[#444444] hover:text-[#1F3A2D]"}`
                 }
               >
                 {link.name}
@@ -53,16 +53,21 @@ function Navbar() {
         </div> */}
 
         <button
-          className="rounded-full p-2 lg:hidden"
+          className="rounded-full p-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1F3A2D] lg:hidden"
           onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle navigation"
+          aria-expanded={menuOpen}
+          aria-controls="mobile-navigation"
+          aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
         >
           {menuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
       </nav>
 
       <div
-        className={`overflow-hidden transition-all duration-300 lg:hidden ${menuOpen ? "max-h-96" : "max-h-0"}`}
+        id="mobile-navigation"
+        aria-hidden={!menuOpen}
+        inert={!menuOpen}
+        className={`overflow-hidden transition-all duration-300 motion-reduce:transition-none lg:hidden ${menuOpen ? "max-h-96" : "max-h-0"}`}
       >
         <div className="border-t border-[#E8E3DA] bg-white/95 px-6 py-6 shadow-lg">
           {navLinks.map((link) => (
@@ -71,19 +76,19 @@ function Navbar() {
               to={link.href}
               onClick={() => setMenuOpen(false)}
               className={({ isActive }) =>
-                `block py-3 text-sm font-medium ${isActive ? "text-[#1F3A2D]" : "text-[#444444]"}`
+                `block min-h-11 rounded-sm py-3 text-sm font-medium focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1F3A2D] ${isActive ? "text-[#1F3A2D]" : "text-[#444444]"}`
               }
             >
               {link.name}
             </NavLink>
           ))}
-          <a
-            href="#products"
-            className="mt-4 inline-flex rounded-full bg-[#1F3A2D] px-5 py-3 text-sm font-semibold text-white"
+          <Link
+            to="/products"
+            className="mt-4 inline-flex min-h-12 items-center rounded-full bg-[#1F3A2D] px-5 py-3 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1F3A2D]"
             onClick={() => setMenuOpen(false)}
           >
             Shop Now
-          </a>
+          </Link>
         </div>
       </div>
     </header>

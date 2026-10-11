@@ -188,34 +188,19 @@ export const testimonials = [
 
 export const faqItems = [
   {
-    question: "How should I use the hair oil?",
+    question: "How can I place an order?",
     answer:
-      "Apply a few drops to your scalp and lengths, then massage gently or use as a finishing treatment.",
+      "Open a product page and choose Buy now on WhatsApp to ask about availability and place your order.",
   },
   {
-    question: "Are the ingredients natural?",
+    question: "Where can I find directions for using a product?",
     answer:
-      "Yes. Our formulas are inspired by botanicals and are thoughtfully blended with clean, modern standards.",
+      "Follow the directions and precautions printed on the product packaging. Contact SL Labs if you have a question about a product.",
   },
   {
-    question: "Do you ship internationally?",
+    question: "How can I contact SL Labs?",
     answer:
-      "We ship across India and select international destinations. Delivery estimates are shared at checkout.",
-  },
-  {
-    question: "What is your return policy?",
-    answer:
-      "If your product arrives damaged or incorrect, we will assist with a replacement or refund within the policy window.",
-  },
-  {
-    question: "How long does the product last?",
-    answer:
-      "Most products remain effective for 12 to 18 months from opening when stored away from direct sunlight.",
-  },
-  {
-    question: "Is the range safe for regular use?",
-    answer:
-      "Yes. All formulas are developed with safety in mind and tested for everyday use.",
+      "Use the email address or phone number listed in the Contact section of this website.",
   },
 ];
 
